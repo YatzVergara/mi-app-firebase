@@ -1,0 +1,157 @@
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+}
+
+button.logout {
+  width: auto;
+  padding: 8px 16px;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.4);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.form-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.form-card h3 {
+  margin-bottom: 16px;
+  color: #333;
+  font-size: 16px;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-card input:focus {
+  border-color: #667eea;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.form-buttons button {
+  width: auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.form-buttons button.cancel {
+  background: #e1e5e9;
+  color: #333;
+}
+
+.tasks-container h3 {
+  color: white;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.empty {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.task-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: opacity 0.3s;
+}
+
+.task-card.completed {
+  opacity: 0.6;
+}
+
+.task-card.completed h4 {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-info h4 {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.task-info p {
+  font-size: 13px;
+  color: #666;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button {
+  width: auto;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  background: #f0f0f0;
+}
+
+.task-actions button:hover {
+  background: #e0e0e0;
+}
